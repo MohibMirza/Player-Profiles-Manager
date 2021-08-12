@@ -49,6 +49,7 @@ public class PlayerJoinProfileSync implements Listener {
             String inv = rPlayer.getInv();
 
             Bukkit.getScheduler().runTask(plugin, () -> {
+                System.out.println("Playtime: " + rPlayer.getPlaytime());
                 InventorySerialization.setInventory(player, inv);
                 System.out.println("TODO: SET PREFIX TO THAT OF " + title);
 

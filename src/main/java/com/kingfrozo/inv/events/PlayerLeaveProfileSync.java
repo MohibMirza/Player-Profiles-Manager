@@ -27,6 +27,7 @@ public class PlayerLeaveProfileSync implements Listener {
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
             RPlayer rplayer = RLORetrieval.getLivePlayerProfile(uuid, name);
             rplayer.setInv(inv);
+            rplayer.updatePlaytime();
         });
 
     }

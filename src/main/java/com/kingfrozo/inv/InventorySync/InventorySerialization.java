@@ -53,7 +53,6 @@ public class InventorySerialization {
             beginIndex = endIndex + 1;
             if(itemName.equals("")) continue;
             player.getInventory().setItem(i, CustomStack.getInstance(itemName).getItemStack());
-
         }
     }
 
