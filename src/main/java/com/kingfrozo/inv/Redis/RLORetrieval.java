@@ -2,6 +2,7 @@ package com.kingfrozo.inv.Redis;
 
 import com.kingfrozo.inv.RClasses.RPlayer;
 import com.kingfrozo.inv.config.Values;
+import org.bukkit.Bukkit;
 import org.redisson.api.RLiveObjectService;
 
 public class RLORetrieval {
@@ -23,6 +24,7 @@ public class RLORetrieval {
             rPlayer = retrieveProfile(uuid);
             if(Values.debug) System.out.println(name + " has joined network for first time. Creating new player profile...");
         }
+        rPlayer.setLastSeen(System.currentTimeMillis());
         return rPlayer; // ALWAYS RETURNS AN RPLAYER
     }
 
@@ -30,9 +32,9 @@ public class RLORetrieval {
         RPlayer rPlayer = retrieveProfile(uuid);
 
         if(rPlayer == null) {
-            /*Bukkit.getScheduler().runTask(plugin, () -> {
-                Bukkit.getPlayer(name).kickPlayer("[Memory Cache Retrieval Error] Please log back in again");
-            });*/
+//            Bukkit.getScheduler().runTask(plugin, () -> {
+//                Bukkit.getPlayer(name).kickPlayer("[Memory Cache Retrieval Error] Please log back in again");
+//            });
 
             if(Values.debug) System.out.println("Player not found! Kicking " + name + "for relog");
         }

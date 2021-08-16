@@ -35,7 +35,6 @@ public class RPlayer {
         money = 0;
         inv = ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,";
         playtime = 0;
-        lastSeen = System.currentTimeMillis();
     }
 
     public RPlayer() { } // FOR USE BY REDISSON RLO MODULE
@@ -90,10 +89,8 @@ public class RPlayer {
         this.inv = inv;
     }
 
-    public void addPlaytime(int minutes) { playtime += minutes; }
-
     public void setLastSeen(long time) { lastSeen = time; }
 
-    public void updatePlaytime() { playtime += (System.currentTimeMillis() - lastSeen) / 1000; }
+    public void setPlaytime(int minutes) { playtime = minutes; }
 
 }

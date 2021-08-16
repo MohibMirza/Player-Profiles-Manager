@@ -2,8 +2,8 @@ package com.kingfrozo.inv;
 
 import com.kingfrozo.inv.Redis.RLORetrieval;
 import com.kingfrozo.inv.Redis.RedisClient;
-import com.kingfrozo.inv.events.PlayerJoinProfileSync;
-import com.kingfrozo.inv.events.PlayerLeaveProfileSync;
+import com.kingfrozo.inv.config.Title;
+import com.kingfrozo.inv.events.*;
 import org.bukkit.Server;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.redisson.api.RLiveObjectService;
@@ -25,6 +25,14 @@ public final class Main extends JavaPlugin {
         connectToRedis();
         getServer().getPluginManager().registerEvents(new PlayerJoinProfileSync(), this);
         getServer().getPluginManager().registerEvents(new PlayerLeaveProfileSync(), this);
+        getServer().getPluginManager().registerEvents(new PlayerInteractTestEvent(), this);
+        getServer().getPluginManager().registerEvents(new ItemCirculationInventorySync(), this);
+        getServer().getPluginManager().registerEvents(new ChatMarkdown(), this);
+
+        Title.readTitles();
+        Title.titles.forEach((s, title) -> {
+            System.out.println(title.toString());
+        });
     }
 
     @Override

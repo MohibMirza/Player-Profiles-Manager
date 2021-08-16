@@ -15,8 +15,10 @@ public class PlayerLeaveProfileSync implements Listener {
     Main plugin = Main.getPlugin();
 
 
-    // TODO: REMOVE SYNCING OF INVENTORIES WHEN LEAVING SERVER
-    // DATA SHOULD BE SYNCED DURING GAMEPLAY ONLY, NOT WHEN LEAVING
+    // TODO: SYNC INVENTORIES UPON PICKUP/DROP EVENT
+    // TODO: ADD MORE ACCURATE PLAYTIME
+    // TODO: ADD PREFIXES AND RANKS THRU LUCKPERMS API
+
     @EventHandler
     public void onLeave(PlayerQuitEvent event) {
         Player player = event.getPlayer();
@@ -27,7 +29,9 @@ public class PlayerLeaveProfileSync implements Listener {
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
             RPlayer rplayer = RLORetrieval.getLivePlayerProfile(uuid, name);
             rplayer.setInv(inv);
-            rplayer.updatePlaytime();
+            int timeLoggedIn = (int) ((System.currentTimeMillis() - rplayer.getLastSeen()) / 1000 );
+            rplayer.setPlaytime(rplayer.getPlaytime() + timeLoggedIn);
+
         });
 
     }

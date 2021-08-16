@@ -1,1 +1,253 @@
-{"threads":16,"nettyThreads":32,"referenceEnabled":true,"transportMode":"NIO","lockWatchdogTimeout":30000,"reliableTopicWatchdogTimeout":600000,"keepPubSubOrder":true,"useScriptCache":false,"minCleanUpDelay":5,"maxCleanUpDelay":1800,"cleanUpKeysAmount":100,"nettyHook":{"class":"org.redisson.client.DefaultNettyHook"},"useThreadClassLoader":true,"addressResolverGroupFactory":{"class":"org.redisson.connection.DnsAddressResolverGroupFactory"}}
+titles:
+  player:
+    Title: "&3뜉ꈉꈉꈉꈉꈈ&f뜏"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 6
+  daydreamer:
+    Title: "솂笞셒"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 10
+  icebreaker:
+    Title: "솂笞眄"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 10
+  endergetic:
+    Title: "솂笞盯"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 10
+  astronaut:
+    Title: "뜌鸱셾"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  celestial:
+    Title: "뜌鸱셷"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  glamorous:
+    Title: "뜌鸱셱"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  scientist:
+    Title: "뜌鸱셻"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  classical:
+    Title: "뜌鸱腨"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  enchanted:
+    Title: "뜌鸱盱"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  herobrine:
+    Title: "뜌鸱睚"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  lifesaver:
+    Title: "뜌鸱眵"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  moderator:
+    Title: "뜌鸱犒"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 9
+  addicted:
+    Title: "뜋簏셣"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  champion:
+    Title: "뜋簏셫"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  creative:
+    Title: "뜋簏솛"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  criminal:
+    Title: "뜋簏셰"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  firebolt:
+    Title: "뜋簏셬"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  nautical:
+    Title: "뜋簏셮"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  sherlock:
+    Title: "뜋簏瞎"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  rockstar:
+    Title: "뜋簏瞭"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  explorer:
+    Title: "뜋簏睎"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  friendly:
+    Title: "뜋簏眈"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  bookworm:
+    Title: "뜋簏眈"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 8
+  inferno:
+    Title: "뜊鹅셭"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  hustler:
+    Title: "뜊鹅셦"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  haunted:
+    Title: "뜊鹅셽"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  athlete:
+    Title: "뜊鹅셴"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  blessed:
+    Title: "뜊鹅셳"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  captain:
+    Title: "뜊鹅셲"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  elegant:
+    Title: "뜊鹅셶"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  flutter:
+    Title: "뜊鹅셵"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  magical:
+    Title: "뜊鹅셨"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  scholar:
+    Title: "뜊鹅셩"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  splashy:
+    Title: "뜊鹅뜓"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7
+  stacked:
+    Title: "뜊鹅셺"
+    Icon: ""
+    Description:
+      - "&r&5Default Title"
+    CustomModelData: 15
+    Characters: 7

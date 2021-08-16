@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerPickupItemEvent;
 import org.bukkit.inventory.Inventory;
 import org.redisson.api.RLiveObjectService;
 
@@ -49,7 +50,6 @@ public class PlayerJoinProfileSync implements Listener {
             String inv = rPlayer.getInv();
 
             Bukkit.getScheduler().runTask(plugin, () -> {
-                System.out.println("Playtime: " + rPlayer.getPlaytime());
                 InventorySerialization.setInventory(player, inv);
                 System.out.println("TODO: SET PREFIX TO THAT OF " + title);
 
