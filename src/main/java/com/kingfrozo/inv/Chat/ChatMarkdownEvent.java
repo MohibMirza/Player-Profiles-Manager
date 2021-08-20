@@ -1,4 +1,4 @@
-package com.kingfrozo.inv.events;
+package com.kingfrozo.inv.Chat;
 
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
@@ -9,7 +9,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
-public class ChatMarkdown implements Listener {
+public class ChatMarkdownEvent implements Listener {
 
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {

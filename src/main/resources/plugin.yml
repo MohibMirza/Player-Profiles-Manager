@@ -5,3 +5,8 @@ api-version: 1.16
 load: STARTUP
 depend:
   - ItemsAdder
+commands:
+  stopredis:
+    description: Shut down redis. Only use to reload the PlayerProfile plugin
+    usage: /stopredis
+    permission: playerprofilesmanager.stopredis

@@ -1,4 +1,4 @@
-package com.kingfrozo.inv.config;
+package com.kingfrozo.inv.Chat;
 
 import com.kingfrozo.inv.Main;
 import org.bukkit.configuration.ConfigurationSection;
@@ -62,7 +62,7 @@ public class Title {
     }
 
     public String getTitle(String color) { // color updates to whatever color is
-        return title.substring(0, 2) + color + title.charAt(2);
+        return color + title.substring(0, 2) + "§f" + title.charAt(2) + color;
     }
 
     public void setTitle(String title) {

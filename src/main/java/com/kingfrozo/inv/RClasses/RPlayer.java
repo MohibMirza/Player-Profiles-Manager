@@ -15,6 +15,7 @@ public class RPlayer {
     private int money;
     private String inv;
     private long lastSeen;
+    private long lastTimePlaytimeSynced;
     private int playtime;
 
     public RPlayer(String uuid, String name, String title, int money, String inv) {
@@ -63,6 +64,8 @@ public class RPlayer {
 
     public int getPlaytime() { return playtime; }
 
+    public long getLastTimePlaytimeSynced() { return lastTimePlaytimeSynced; }
+
     public long getLastSeen() { return lastSeen; }
 
     public void setUUID(String uuid) {
@@ -90,6 +93,8 @@ public class RPlayer {
     }
 
     public void setLastSeen(long time) { lastSeen = time; }
+
+    public void setLastTimePlaytimeSynced(long time) { lastTimePlaytimeSynced = time; }
 
     public void setPlaytime(int minutes) { playtime = minutes; }
 
