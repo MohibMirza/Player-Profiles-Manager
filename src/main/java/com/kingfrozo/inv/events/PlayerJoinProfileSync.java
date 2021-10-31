@@ -43,7 +43,9 @@ public class PlayerJoinProfileSync implements Listener {
         String name = player.getName();
 
         InventorySerialization.serialize(player.getInventory());
-        if(player.hasPermission(Permissions.dontSyncInventory)){ return; }
+        // if(player.hasPermission(Permissions.dontSyncInventory)){ return; } // ANNOYING TO DEBUG
+
+        if(player.getName().equals("KingFrozo") || player.getName().equals("flareman99")) return;
 
         player.getInventory().clear();
 
