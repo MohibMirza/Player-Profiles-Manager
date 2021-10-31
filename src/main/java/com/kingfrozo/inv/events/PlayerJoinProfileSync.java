@@ -4,6 +4,7 @@ import com.kingfrozo.inv.InventorySync.InventorySerialization;
 import com.kingfrozo.inv.Main;
 import com.kingfrozo.inv.RClasses.RPlayer;
 import com.kingfrozo.inv.Redis.RLORetrieval;
+import com.kingfrozo.inv.util.Permissions;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -42,6 +43,8 @@ public class PlayerJoinProfileSync implements Listener {
         String name = player.getName();
 
         InventorySerialization.serialize(player.getInventory());
+        if(player.hasPermission(Permissions.dontSyncInventory)){ return; }
+
         player.getInventory().clear();
 
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {

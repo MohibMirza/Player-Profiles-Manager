@@ -16,6 +16,7 @@ import org.bukkit.event.player.*;
 public class ItemCirculationInventorySync implements Listener {
 
     // TODO: MAKE A BOOLEAN THAT TRANSFORMS THIS CLASS INTO AN IMMUTABLE INVENTORY FOR MINIGAMES
+    // TODO: HANDLE ALL TODOS BELOW (TODO TODO)
 
     public static boolean dropsAllowed = true;
     public static String errorMessage = ChatColor.RED + "Item drops/usage not allowed right now!";

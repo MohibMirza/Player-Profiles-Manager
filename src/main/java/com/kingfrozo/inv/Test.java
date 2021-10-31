@@ -39,6 +39,7 @@ public class Test {
         RPlayer xShambles = service.get(RPlayer.class, "90e937fa-462d-3b31-9a52-f4384ab79c51");
         if(xShambles == null) System.out.println("xshambles not found");
         xShambles.setTitle("splashy");
+        System.out.println(xShambles.getInv());
 
         redis.shutdown();
     }
