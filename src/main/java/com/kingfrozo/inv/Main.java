@@ -72,6 +72,8 @@ public final class Main extends JavaPlugin {
 //            rlo.registerClass(RPlayer.class);
 //            System.out.println("Registered RPlayer.class on RLO.");
 //        }
+
+
     }
 
     public static void disconnectRedis(){

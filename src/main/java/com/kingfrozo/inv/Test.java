@@ -32,7 +32,7 @@ public class Test {
 
         // RLORetrieval.rlo.persist(random);
 
-       // RPlayer jack = RLORetrieval.getLivePlayerProfileOnLogin("123214145", "jack");
+        // RPlayer jack = RLORetrieval.getLivePlayerProfileOnLogin("123214145", "jack");
 
         // System.out.println(jack.getTitle());
 

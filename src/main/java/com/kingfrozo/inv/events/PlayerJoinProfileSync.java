@@ -4,7 +4,6 @@ import com.kingfrozo.inv.InventorySync.InventorySerialization;
 import com.kingfrozo.inv.Main;
 import com.kingfrozo.inv.RClasses.RPlayer;
 import com.kingfrozo.inv.Redis.RLORetrieval;
-import com.kingfrozo.inv.util.Permissions;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -42,12 +41,13 @@ public class PlayerJoinProfileSync implements Listener {
         String uuid = player.getUniqueId().toString();
         String name = player.getName();
 
-        InventorySerialization.serialize(player.getInventory());
+        InventorySerialization.serialize(player.getInventory()); // not sure why this is here??
         // if(player.hasPermission(Permissions.dontSyncInventory)){ return; } // ANNOYING TO DEBUG
 
-        if(player.getName().equals("KingFrozo") || player.getName().equals("flareman99")) return;
+        // if(player.getName().equals("KingFrozo") || player.getName().equals("flareman99")) return;
 
         player.getInventory().clear();
+        System.out.println("Inventory cleared!");
 
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
             RPlayer rPlayer = RLORetrieval.getLivePlayerProfileOnLogin(uuid, name);
